@@ -41,5 +41,10 @@ public partial class MainPage : ContentPage
 
         SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private async void OnGraphicsClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//GraphicsPage");
+    }
 }
 
